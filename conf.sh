@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #ACTUALIZAMOS UBUNTU
+sleep 2
 sudo apt update 
 sudo apt upgrade -y
 
@@ -25,7 +26,7 @@ echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.
 
 #INSTALAMOS TODOS LOS PAQUETES
 sudo apt update
-sudo apt install firefox code nala virtualbox git kitty -y
+sudo apt install firefox code nala virtualbox git kitty neofetch -y
 wget https://github.com/neovim/neovim/releases/download/v0.8.0/nvim-linux64.deb
 sudo dpkg -i nvim-linux64.deb
 rm nvim-linux64.deb
@@ -40,3 +41,23 @@ rm -rf nerd-fonts
 #INSTALAMOS ASTROVIM
 git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 nvim +PackerSync
+
+#CONFIGURAMOS KITTY
+cp config/kitty ~/.config/kitty
+
+#INSTALAMOS ZSH Y CONFIGURAMOS POWERLEVEL10K
+sudo apt install zsh
+sudo su
+usermod --shell /usr/bin/zsh scepticg
+exit
+cp .zshrc ~/.zshrc
+sudo apt install zsh-syntax-highlighting zsh-autosuggestions locate bat
+sudo updatedb
+sudo mkdir /usr/share/zsh-sudo
+sudo chown scepticg:scepticg /usr/share/zsh-sudo
+wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/sudo/sudo.plugin.zsh
+sudo mv sudo.plugin.zsh /usr/share/zsh-sudo
+sudo dpkg -i lsd-musl_0.23.1_amd64.deb
+rm lsd-musl_0.23.1_amd64.deb
+mkdir -p ~/.local/bin
+ln -s /usr/bin/batcat ~/.local/bin/bat
