@@ -58,6 +58,7 @@ sudo mv sudo.plugin.zsh /usr/share/zsh-sudo
 wget https://github.com/Peltoche/lsd/releases/download/0.23.1/lsd-musl_0.23.1_amd64.deb
 sudo dpkg -i lsd-musl_0.23.1_amd64.deb
 mkdir -p ~/.local/bin
+rm lsd-musl_0.23.1_amd64.deb
 ln -s /usr/bin/batcat ~/.local/bin/bat
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
