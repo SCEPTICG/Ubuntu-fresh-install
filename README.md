@@ -17,4 +17,4 @@ git clon https://github.com/SCEPTICG/Ubuntu-fresh-install
 cd Ubuntu-fresh-install
 chmod +x conf.sh
 ./conf.sh
-``
+```
