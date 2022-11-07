@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt install zsh
+sudo apt install zsh -y
 sudo su
 usermod --shell /usr/bin/zsh scepticg
 exit
