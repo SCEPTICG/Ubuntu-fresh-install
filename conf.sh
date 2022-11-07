@@ -50,7 +50,7 @@ sudo apt install zsh
 sudo su
 usermod --shell /usr/bin/zsh scepticg
 exit
-cp .zshrc ~/.zshrc
+cp zshrc ~/.zshrc
 sudo apt install zsh-syntax-highlighting zsh-autosuggestions locate bat
 sudo updatedb
 sudo mkdir /usr/share/zsh-sudo
