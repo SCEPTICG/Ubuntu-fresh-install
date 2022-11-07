@@ -30,6 +30,9 @@ sudo apt install firefox code nala virtualbox git kitty neofetch -y
 wget https://github.com/neovim/neovim/releases/download/v0.8.0/nvim-linux64.deb
 sudo dpkg -i nvim-linux64.deb
 rm nvim-linux64.deb
+wget https://github.com/shiftkey/desktop/releases/download/release-3.1.1-linux1/GitHubDesktop-linux-3.1.1-linux1.deb
+sudo dpkg -i GitHubDesktop-linux-3.1.1-linux1.deb
+rm GitHubDesktop-linux-3.1.1-linux1.deb
 
 #DESCARGAMOS E INSTALAMOS NERDFONTS
 git clone https://github.com/ryanoasis/nerd-fonts.git
