@@ -58,11 +58,10 @@ alias la='lsd -a --group-dirs=first'
 alias l='lsd --group-dirs=first'
 alias lla='lsd -lha --group-dirs=first'
 alias ls='lsd --group-dirs=first'
-alias cat='batcat'
+alias cat='bat'
 alias sudo='sudo '
 alias apt='nala'
 alias vim='nvim'
-alias vi='nvim'
 alias v='nvim'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -129,4 +128,8 @@ function rmk(){
 	scrub -p dod $1
 	shred -zun 10 -v $1
 }
+
+# Finalize Powerlevel10k instant prompt. Should stay at the bottom of ~/.zshrc.
+(( ! ${+functions[p10k-instant-prompt-finalize]} )) || p10k-instant-prompt-finalize
 neofetch
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
