@@ -47,6 +47,4 @@ cp config/kitty ~/.config/kitty
 
 #INSTALAMOS ZSH Y CONFIGURAMOS POWERLEVEL10K
 sudo apt install zsh
-sudo su
-usermod --shell /usr/bin/zsh scepticg
-exit
+chsh -s $(which zsh)
