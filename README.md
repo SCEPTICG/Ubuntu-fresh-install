@@ -8,8 +8,13 @@ Cosas que hace el script:
 - Instala Neovim 0.8
 - Instala las Nerd Fonts
 - Instala AstroVim
-
-Futuras implementaciones:
 - Instalar zsh
 - Configurar powerlevel10k
 
+### Instalación
+```
+git clon https://github.com/SCEPTICG/Ubuntu-fresh-install
+cd Ubuntu-fresh-install
+chmod +x conf.sh
+./conf.sh
+```
