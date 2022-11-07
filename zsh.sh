@@ -1,6 +1,6 @@
 #!/bin/bash
 cp zshrc ~/.zshrc
-sudo apt install zsh-syntax-highlighting zsh-autosuggestions locate bat
+sudo apt install zsh-syntax-highlighting zsh-autosuggestions locate bat -y
 sudo updatedb
 sudo mkdir /usr/share/zsh-sudo
 sudo chown scepticg:scepticg /usr/share/zsh-sudo
