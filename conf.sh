@@ -45,9 +45,6 @@ rm -rf nerd-fonts
 git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 nvim +PackerSync
 
-#CONFIGURAMOS KITTY
-cp config/kitty ~/.config/kitty
-
 #INSTALAMOS ZSH Y CONFIGURAMOS POWERLEVEL10K
 sudo apt install zsh -y
 chsh -s $(which zsh)
