@@ -26,7 +26,7 @@ echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.
 
 #INSTALAMOS TODOS LOS PAQUETES
 sudo apt update
-sudo apt install firefox code nala virtualbox git kitty neofetch -y
+sudo apt install firefox code nala virtualbox-7.0 git kitty neofetch ubuntu-restricted-extras -y
 wget https://github.com/neovim/neovim/releases/download/v0.8.0/nvim-linux64.deb
 sudo dpkg -i nvim-linux64.deb
 rm nvim-linux64.deb
@@ -64,3 +64,4 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 /usr/bin/zsh
 p10k configure
+cp p10k.zsh ~/.p10k.zsh
