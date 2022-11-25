@@ -18,4 +18,6 @@ git clone https://github.com/SCEPTICG/Ubuntu-fresh-install
 cd Ubuntu-fresh-install
 chmod +x conf.sh
 ./conf.sh
+chmod +x sudoconf.sh
+sudo ./sudoconf.sh
 ```
