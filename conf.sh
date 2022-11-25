@@ -2,7 +2,7 @@
 
 #ACTUALIZAMOS UBUNTU
 sudo apt update 
-sudo apt dist-upgrade -y
+sudo apt upgrade -y
 
 #INSTALAR FIREFOX COMO .DEB
 sudo snap remove firefox
