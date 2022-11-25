@@ -1,9 +1,8 @@
 #!/bin/bash
 
 #ACTUALIZAMOS UBUNTU
-sleep 2
 sudo apt update 
-sudo apt upgrade -y
+sudo apt dist-upgrade -y
 
 #INSTALAR FIREFOX COMO .DEB
 sudo snap remove firefox
@@ -63,19 +62,8 @@ ln -s /usr/bin/batcat ~/.local/bin/bat
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 cp p10k.zsh ~/.p10k.zsh
-sudo su
-ln -s -f /home/scepticg/.zshrc /root/.zshrc
-chsh -s $(which zsh)
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
-git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-nvim +PackerSync
-exit
 
 #INSTALAMOS FZF
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
-sudo su
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 exit
