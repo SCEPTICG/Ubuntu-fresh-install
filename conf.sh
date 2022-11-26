@@ -26,7 +26,7 @@ echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.
 #INSTALAMOS TODOS LOS PAQUETES
 sudo apt update
 sudo apt install firefox code nala virtualbox git kitty neofetch ubuntu-restricted-extras -y
-wget https://github.com/neovim/neovim/releases/download/v0.8.0/nvim-linux64.deb
+wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.deb
 sudo dpkg -i nvim-linux64.deb
 rm nvim-linux64.deb
 wget https://github.com/shiftkey/desktop/releases/download/release-3.1.1-linux1/GitHubDesktop-linux-3.1.1-linux1.deb
