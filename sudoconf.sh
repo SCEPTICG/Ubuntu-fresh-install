@@ -14,6 +14,7 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
 cp p10k.zsh ~/.p10k.zsh
 
 #INSTALAMOS ASTROVIM PARA ROOT
+mv ~/.local/share/nvim/site ~/.local/share/nvim/site.bak
 git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 nvim +PackerSync
 

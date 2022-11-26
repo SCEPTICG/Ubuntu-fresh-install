@@ -41,6 +41,7 @@ cd ..
 rm -rf nerd-fonts
 
 #INSTALAMOS ASTROVIM
+mv ~/.local/share/nvim/site ~/.local/share/nvim/site.bak
 git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 nvim +PackerSync
 
